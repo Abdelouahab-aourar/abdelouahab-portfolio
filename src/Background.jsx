@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
-export const Background = (children) => {
-    const [stars, setStars] = useState()
-    const [meteors, setMeteors] = useEffect()
+
+export const Background = ({children}) => {
+const [stars, setStars] = useState()
+const [meteors, setMeteors] = useState()
+
     return(
-        <div>
+        <div className="bg-[#001832] min-h-screen min-w-screen">
             <div>
 
             </div>
