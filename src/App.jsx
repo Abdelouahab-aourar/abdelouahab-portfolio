@@ -4,7 +4,7 @@ function App() {
   return (
     <>
     <Background>
-      <h1>hi</h1>
+      <h1 className="text-glow text-primary">hi</h1>
     </Background>
     </>
   )

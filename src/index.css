@@ -1,1 +1,57 @@
 @import "tailwindcss";
+
+@theme{
+    --color-background: hsl(var(--background));
+    --color-primary: hsl(var(--primary));
+    --animate-pulse-subtle: pulse-subtle 3s ease-in-out infinite;
+}
+
+@keyframes pulse-subtle {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.1;
+    }
+  }
+@layer base {
+    :root {
+        --background: 211 100% 10%;
+        --primary: 194 100% 60%;
+    }
+
+    * {
+        @apply border-primary;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply bg-background text-white transition-colors duration-300;
+    }
+}
+
+
+@utility text-glow {
+    @apply relative;
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.5)
+}
+
+@utility card-hover {
+    @apply transition transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+}
+
+@utility star {
+  @apply absolute rounded-full bg-primary;
+  box-shadow: 0 0 10px 2px hsl(194, 100%, 60%);
+}
+
+#root{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
