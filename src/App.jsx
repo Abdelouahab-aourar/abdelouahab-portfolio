@@ -1,4 +1,4 @@
-import { Background } from "./Background"
+import { Background } from "./components/Background"
 function App() {
 
   return (
