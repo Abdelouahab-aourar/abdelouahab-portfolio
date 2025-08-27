@@ -5,10 +5,50 @@ function App() {
 
   return (
     <>
-    <Background>
+    <Background/>
       <NavBar/>
       <Home/>
-    </Background>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
+      <Home/>
     </>
   )
 }

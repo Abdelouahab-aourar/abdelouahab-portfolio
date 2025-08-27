@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 
-export const Background = ({children}) => {
+export const Background = () => {
 const [stars, setStars] = useState([])
 
 useEffect(() => {
@@ -29,7 +29,7 @@ const generateStars = () => {
 }
 
     return(
-        <div className="min-h-screen min-w-screen z-0 fixed overflow-hidden">
+        <div className="min-h-screen min-w-screen z-0 fixed overflow-x-hidden">
             {stars.map((star) =>(
                 <div key={star.id} className="star animate-pulse-subtle" style={{
                     width: star.size + "px",
@@ -40,7 +40,6 @@ const generateStars = () => {
                     animationDuration: star.animationDuration + "s",
                 }}/>
             ))}
-            {children}
         </div>
     )
 }
