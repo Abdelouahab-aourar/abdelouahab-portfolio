@@ -1,10 +1,11 @@
 import { Background } from "./components/Background"
+import { NavBar } from "./components/NavBar"
 function App() {
 
   return (
     <>
     <Background>
-      <h1 className="text-glow text-primary">hi</h1>
+      <NavBar/>
     </Background>
     </>
   )

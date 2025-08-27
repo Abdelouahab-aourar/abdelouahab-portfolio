@@ -29,7 +29,7 @@ const generateStars = () => {
 }
 
     return(
-        <div className="min-h-screen min-w-screen z-0 fixed overflow-hidden px-[5vw]">
+        <div className="min-h-screen min-w-screen z-0 fixed overflow-hidden">
             {stars.map((star) =>(
                 <div key={star.id} className="star animate-pulse-subtle" style={{
                     width: star.size + "px",
