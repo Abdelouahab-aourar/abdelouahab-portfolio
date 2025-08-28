@@ -12,7 +12,7 @@ export const Home = () => {
                     Download My CV
                 </button>
             </div>
-            <div className='w-[35%] flex items-center justify-center max-md:w-[75%]'>
+            <div className='w-[35%] flex items-center justify-center max-md:w-[75%] card-hover'>
                 <img src={HomeImg} alt="Home Image" className='w-full h-full' />
             </div>
         </section>
