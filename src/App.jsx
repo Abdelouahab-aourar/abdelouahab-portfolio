@@ -5,49 +5,8 @@ function App() {
 
   return (
     <>
-    <Background/>
+      <Background/>
       <NavBar/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
-      <Home/>
       <Home/>
     </>
   )

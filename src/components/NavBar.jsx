@@ -14,7 +14,9 @@ export const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     useEffect(()=>{
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 12)
+            if(!isMenuOpen){
+                setIsScrolled(window.scrollY > 12)
+            }
         }
         window.addEventListener("scroll", handleScroll)
         return () => window.removeEventListener("scroll", handleScroll)
@@ -23,7 +25,7 @@ export const NavBar = () => {
     return(
         <nav className={
             `sticky w-full transition-all duration-300 z-40 top-0
-            ${isScrolled ? "py-3 bg-background/50 backdrop-blur-md shadow-xs": "py-5"}`
+            ${isScrolled ? "py-3 bg-background/50 backdrop-blur-md shadow-sm": "py-5"}`
             
         }>
             <div className="flex items-center justify-between px-8">
@@ -49,7 +51,7 @@ export const NavBar = () => {
                 </button>
                 <div className={`fixed inset-0 bg-background/50 backdrop-blur-md z-40 flex flex-col items-center justify-center
                     transition-all duration-300 md:hidden
-                    ${isMenuOpen ? "opacity-100 pointer-events-auto" : "hidden opcaity-0 pointer-events-none"}`
+                    ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`
                 }>
                     <div className="flex flex-col space-y-8 text-xl">
                         {navItems.map((item, key) => (
