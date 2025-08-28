@@ -51,7 +51,7 @@
 }
 
 @utility header{
-    @apply text-center text-primary text-5xl py-10 font-bold
+    @apply text-center text-primary text-5xl py-10 font-bold max-[1100px]:text-4xl max-md:text-3xl
 }
 
 #root{

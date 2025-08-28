@@ -4,7 +4,7 @@ import { Github, Globe, Linkedin, Mail } from 'lucide-react'
 
 export const Home = () => {
     return(
-        <section className='z-10 flex items-center px-10 py-20 w-full max-md:flex-col space-y-10'>
+        <section className='z-10 flex items-center px-10 py-20 w-full max-md:flex-col space-y-10' id='home'>
             <div className='space-y-6 flex items-start flex-col w-[65%] text-left max-md:items-center max-md:text-center max-md:w-full'>
                 <h1 className='text-5xl font-bold max-[1100px]:text-4xl max-md:text-3xl'>Hello There!</h1>
                 <h1 className='text-5xl font-bold max-[1100px]:text-4xl max-md:text-3xl'>I'm <span className='text-primary'><Typewriter words={['Aourar Abdelouahab']} cursor={true} loop={true} typeSpeed={70} deleteSpeed={50} cursorStyle={"█"} /> </span> </h1>

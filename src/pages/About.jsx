@@ -4,8 +4,8 @@
 
 export const About = () => {
     return(
-        <section>
-            <h1 className="header">About</h1>
+        <section id="about">
+            <h1 className="header"><span className="text-white">About</span> Me</h1>
         </section>
     )
 }
