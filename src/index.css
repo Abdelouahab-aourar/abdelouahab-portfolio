@@ -42,7 +42,7 @@
 }
 
 @utility card-hover {
-    @apply transition transform duration-300 hover:shadow-lg shadow-primary;
+    @apply transition-all duration-500 hover:scale-[1.05];
 }
 
 @utility star {

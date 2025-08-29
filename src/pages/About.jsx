@@ -17,12 +17,12 @@ export const About = () => {
 
                     <div className="flex items-center gap-4">
                         <a href="#contact">
-                            <button className="cursor-pointer border-2 border-primary p-2 rounded-lg bg-primary hover:bg-background transition-colors duration-500 ease-in-out active:bg-primary/10">
+                            <button className="cursor-pointer border-2 border-primary p-2 rounded-lg bg-primary hover:bg-background transition-all card-hover duration-500 ease-in-out active:bg-primary/10">
                                 Get In Touch
                             </button>
                         </a>
                         <a href="/MyCV.pdf" target='_blank' download="AourarAbdelouahab.pdf" rel="noopener noreferrer" >
-                            <button className="cursor-pointer border-2 border-primary p-2 rounded-lg hover:bg-primary transition-colors duration-500 ease-in-out active:bg-[hsl(194,100%,40%)]">
+                            <button className="cursor-pointer border-2 border-primary p-2 rounded-lg hover:bg-primary transition-all duration-500 ease-in-out active:bg-[hsl(194,100%,40%)] card-hover">
                                 Download CV
                             </button>
                         </a>
@@ -30,7 +30,7 @@ export const About = () => {
                 </div>
                 <div className="grid grid-cols-1 gap-8">
 
-                    <div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2" >
+                    <div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover" >
                         <div className="flex items-center gap-2">
                             <div className="p-3 bg-primary/10 rounded-full">
                                 <Code className="text-primary"/>
@@ -42,7 +42,7 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2" >
+                    <div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover" >
                         <div className="flex items-center gap-2">
                             <div className="p-3 bg-primary/10 rounded-full">
                                 <PenTool className="text-primary"/>
@@ -54,7 +54,7 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2" >
+                    <div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover" >
                         <div className="flex items-center gap-2">
                             <div className="p-3 bg-primary/10 rounded-full">
                                 <GraduationCap className="text-primary"/>
