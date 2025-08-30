@@ -29,7 +29,7 @@ export const Skills = () => {
     ]
 
 
-    const layout = [7, 5, 3, 2, 1]
+    const layout = [7, 6, 5]
 
     let index = 0;
 
@@ -40,8 +40,39 @@ export const Skills = () => {
     })
 
     return(
-        <section id="skills">
+        <section id="skills" className="z-30">
             <h1 className="header"><span className="text-white">My </span>Skills</h1>
+
+            <div className="flex flex-col items-center gap-4">
+                {rows.map((row, rowIndex) => (
+                    <motion.div
+                        key={rowIndex}
+                        className="flex justify-center gap-6 max-md:gap-2 max-sm:gap-1"
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        {row.map((skill, colIndex) => (
+                            <motion.div
+                                key={colIndex}
+                                className="flex flex-col items-center card-hover"
+                                variants={{
+                                    hidden: { opacity: 0},
+                                    visible: { opacity: 1},
+                                }}
+                                transition={{ duration: colIndex * 2 }}
+                            >
+                                <img
+                                    src={skill.src}
+                                    alt={skill.name}
+                                    className="w-18 h-18 z-30 max-md:w-12 max-md:h-12 max-sm:w-10 max-sm:h-10"
+                                />
+                                <span className="text-sm mt-2 text-glow max-sm:text-[8px]">{skill.name}</span>
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                ))}
+            </div>
+
 
 
             
