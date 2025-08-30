@@ -49,7 +49,8 @@ export const SkillsIcons = () => {
                         key={rowIndex}
                         className="flex justify-center gap-6 max-md:gap-2 max-sm:gap-1"
                         initial="hidden"
-                        animate="visible"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.4 }} 
                     >
                         {row.map((skill, colIndex) => (
                             <motion.div
