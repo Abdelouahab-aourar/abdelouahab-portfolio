@@ -16,7 +16,6 @@ function App() {
       <SkillsIcons/>
       <Projects/>
       <Contact/>
-      
     </>
   )
 }
