@@ -2,7 +2,7 @@ import { Background } from "./components/Background"
 import { NavBar } from "./components/NavBar"
 import { Home } from "./pages/Home"
 import { About } from "./pages/About"
-import { Skills } from "./pages/Skills"
+import { SkillsIcons } from "./pages/SkillsIcons"
 import { Projects } from "./pages/Projects"
 import { Contact } from "./pages/Contact"
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <NavBar/>
       <Home/>
       <About/>
-      <Skills/>
+      <SkillsIcons/>
       <Projects/>
       <Contact/>
       

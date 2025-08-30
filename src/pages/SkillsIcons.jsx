@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 
 
-export const Skills = () => {
+export const SkillsIcons = () => {
     const MySkills = [
         {name: "C++", src: "/Cpp.png"},
         {name: "HTML5", src: "/Html.png"},
@@ -29,7 +29,7 @@ export const Skills = () => {
     ]
 
 
-    const layout = [7, 6, 5]
+    const layout = [6, 5, 4, 3]
 
     let index = 0;
 
@@ -54,19 +54,18 @@ export const Skills = () => {
                         {row.map((skill, colIndex) => (
                             <motion.div
                                 key={colIndex}
-                                className="flex flex-col items-center card-hover"
+                                className="flex flex-col items-center transition-all duration-500 hover:scale-[1.2]"
                                 variants={{
-                                    hidden: { opacity: 0},
-                                    visible: { opacity: 1},
+                                    hidden: { opacity: 0 },
+                                    visible: { opacity: 1 },
                                 }}
-                                transition={{ duration: colIndex * 2 }}
+                                transition={{ delay: colIndex * 0.5, duration: 0.5 }}
                             >
                                 <img
                                     src={skill.src}
                                     alt={skill.name}
-                                    className="w-18 h-18 z-30 max-md:w-12 max-md:h-12 max-sm:w-10 max-sm:h-10"
+                                    className="w-20 h-20 z-30 max-md:w-18 max-md:h-18 max-sm:w-13 max-sm:h-13"
                                 />
-                                <span className="text-sm mt-2 text-glow max-sm:text-[8px]">{skill.name}</span>
                             </motion.div>
                         ))}
                     </motion.div>
