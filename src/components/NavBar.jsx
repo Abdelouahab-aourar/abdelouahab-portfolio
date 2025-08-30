@@ -37,7 +37,7 @@ export const NavBar = () => {
 
             }>
                 <div className="flex items-center justify-between px-8">
-                    <a href="#home" className="text-xl font-bold text-primary">
+                    <a href="" className="text-xl font-bold text-primary">
                         <span className="relative z-10 flex items-center gap-2">
                             <span className="text-glow text-white">
                                 Abdelouahab's
