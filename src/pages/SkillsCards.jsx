@@ -59,7 +59,7 @@ export const SkillsCards = () => {
                         <motion.div key={key} className="bg-primary/5 p-6 rounded-2xl z-30 backdrop-blur-lg shadow-2xl border-1 border-primary card-hover"
                             initial={{ opacity: 0}}
                             whileInView={{ opacity: 1}}
-                            transition={{ duration: 0.4, ease: [0.5, 0.6, 0.8, 1] , delay: key * 0.1}}
+                            transition={{ duration: 0.3, ease: [0.5, 0.6, 0.8, 1] , delay: key * 0.05}}
                             viewport={{ once: false, amount: 0.4 }} 
                         >
                             <div className="text-left mb-4">
