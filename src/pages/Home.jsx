@@ -1,11 +1,17 @@
 import { Typewriter } from 'react-simple-typewriter'
 import HomeImg from '../assets/HomeImg.png'
 import { Github, Globe, Linkedin, Mail } from 'lucide-react'
+import { easeIn, easeInOut, easeOut, motion } from 'motion/react'
 
 export const Home = () => {
     return(
-        <section className='z-10 flex items-center px-10 py-20 w-full max-md:flex-col space-y-10' id='home'>
-            <div className='space-y-6 flex items-start flex-col w-[65%] text-left max-md:items-center max-md:text-center max-md:w-full'>
+        <section className='z-10 flex items-center px-10 py-20 w-full max-md:flex-col space-y-10 overflow-x-hidden' id='home'>
+            <motion.div className='space-y-6 flex items-start flex-col w-[65%] text-left max-md:items-center max-md:text-center max-md:w-full'
+                initial={{opacity: 0, x: -100}}
+                whileInView={{opacity: 1, x: 0}}
+                transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1]}}
+                viewport={{ once: false, amount: 0.4 }}
+            >
                 <h1 className='text-5xl font-bold max-[1100px]:text-4xl max-md:text-3xl'>Hello There!</h1>
                 <h1 className='text-5xl font-bold max-[1100px]:text-4xl max-md:text-3xl'>I'm <span className='text-primary'><Typewriter words={['Aourar Abdelouahab']} cursor={true} loop={true} typeSpeed={70} deleteSpeed={50} cursorStyle={"█"} /> </span> </h1>
                 <div className='flex items-center space-x-2 cursor-pointer z-20'>
@@ -28,10 +34,15 @@ export const Home = () => {
                         Download My CV
                     </button>
                 </a>
-            </div>
-            <div className='w-[35%] flex items-center justify-center max-md:w-[75%] card-hover'>
+            </motion.div>
+            <motion.div className='w-[35%] flex items-center justify-center max-md:w-[75%]'
+                initial={{opacity: 0, x: 100}}
+                whileInView={{opacity: 1, x: 0}}
+                transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1]}}
+                viewport={{ once: false, amount: 0.4 }}
+            >
                 <img src={HomeImg} alt="Home Image" className='w-full h-full' />
-            </div>
+            </motion.div>
         </section>
     )
 }
