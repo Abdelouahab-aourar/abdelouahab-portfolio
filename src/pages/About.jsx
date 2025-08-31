@@ -1,13 +1,24 @@
 import { Code, GraduationCap, PenTool } from "lucide-react"
-
+import { motion } from "motion/react"
 
 
 export const About = () => {
     return(
-        <section id="about" className="px-10 max-md:px-4">
-            <h1 className="header"><span className="text-white">About</span> Me</h1>
+        <section id="about" className="px-10 max-md:px-4 overflow-x-hidden">
+            <motion.h1 className="header"
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{duration: 0.5}}
+                viewport={{ once: false, amount: 0.4 }}
+            ><span className="text-white">About</span> Me
+            </motion.h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center p-10 border-4 border-primary rounded-2xl bg-primary/2 backdrop-blur-sm shadow-2xl max-md:p-4">
-                <div className="flex items-center gap-4 flex-col">
+                <motion.div className="flex items-center gap-4 flex-col"
+                    initial={{opacity: 0, x: -50}}
+                    whileInView={{opacity: 1, x: 0}}
+                    transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1]}}
+                    viewport={{ once: false, amount: 0.4 }}
+                >
                     <h1 className="text-4xl text-glow max-md:text-3xl">Aourar Abdelouahab</h1>
                     <h1 className="text-2xl text-glow max-md:text-xl">Web Developer | Graphic Designer | AI Enthusiast</h1>
                     <h1 className="text-2xl text-glow max-md:text-xl">Second Year Student At ENSIA</h1>
@@ -27,10 +38,15 @@ export const About = () => {
                             </button>
                         </a>
                     </div>
-                </div>
+                </motion.div>
                 <div className="grid grid-cols-1 gap-8">
 
-                    <div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover" >
+                    <motion.div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover"
+                        initial={{opacity: 0, x: 50}}
+                        whileInView={{opacity: 1, x: 0}}
+                        transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1]}}
+                        viewport={{ once: false, amount: 0.4 }}
+                    >
                         <div className="flex items-center gap-2">
                             <div className="p-3 bg-primary/10 rounded-full">
                                 <Code className="text-primary"/>
@@ -40,9 +56,14 @@ export const About = () => {
                         <div className="text-left">
                             <p className="text-sm">Building responsive websites and web applications with modern frameworks</p>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover" >
+                    <motion.div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover" 
+                        initial={{opacity: 0, x: 50}}
+                        whileInView={{opacity: 1, x: 0}}
+                        transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.4}}
+                        viewport={{ once: false, amount: 0.4 }}
+                    >
                         <div className="flex items-center gap-2">
                             <div className="p-3 bg-primary/10 rounded-full">
                                 <PenTool className="text-primary"/>
@@ -52,9 +73,14 @@ export const About = () => {
                         <div className="text-left">
                             <p className="text-sm">Designing visually engaging graphics, layouts, and brand identities that stand out</p>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover" >
+                    <motion.div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover" 
+                        initial={{opacity: 0, x: 50}}
+                        whileInView={{opacity: 1, x: 0}}
+                        transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.8}}
+                        viewport={{ once: false, amount: 0.4 }}
+                    >
                         <div className="flex items-center gap-2">
                             <div className="p-3 bg-primary/10 rounded-full">
                                 <GraduationCap className="text-primary"/>
@@ -64,7 +90,7 @@ export const About = () => {
                         <div className="text-left">
                             <p className="text-sm">second year student at ENSIA (National Higher School of Artificial Intelligence Algiers) and self-taught learner</p>
                         </div>
-                    </div>
+                    </motion.div>
 
 
                 </div>

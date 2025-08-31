@@ -41,7 +41,13 @@ export const SkillsIcons = () => {
 
     return(
         <section id="skills" className="z-30">
-            <h1 className="header"><span className="text-white">My </span>Skills</h1>
+            <motion.h1 className="header"
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{duration: 0.5}}
+                viewport={{ once: false, amount: 0.4 }}
+            ><span className="text-white">My </span>Skills
+            </motion.h1>
 
             <div className="flex flex-col items-center gap-4">
                 {rows.map((row, rowIndex) => (

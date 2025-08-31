@@ -7,7 +7,7 @@ export const Home = () => {
     return(
         <section className='z-10 flex items-center px-10 py-20 w-full max-md:flex-col space-y-10 overflow-x-hidden' id='home'>
             <motion.div className='space-y-6 flex items-start flex-col w-[65%] text-left max-md:items-center max-md:text-center max-md:w-full'
-                initial={{opacity: 0, x: -100}}
+                initial={{opacity: 0, x: -50}}
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1]}}
                 viewport={{ once: false, amount: 0.4 }}
@@ -36,7 +36,7 @@ export const Home = () => {
                 </a>
             </motion.div>
             <motion.div className='w-[35%] flex items-center justify-center max-md:w-[75%]'
-                initial={{opacity: 0, x: 100}}
+                initial={{opacity: 0, x: 50}}
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1]}}
                 viewport={{ once: false, amount: 0.4 }}
