@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import { motion } from "motion/react"
 export const SkillsCards = () => {
     const skills = [
         //FrontEnd
@@ -33,18 +33,22 @@ export const SkillsCards = () => {
     const filteredSkills = skills.filter((skill) => activeCategory === "all" || skill.category === activeCategory)
 
     return(
-        <section className="px-30 max-md:px-20 max-sm:px-10 py-10">
+        <section className="px-30 max-md:px-20 max-sm:px-10 py-10 overflow-x-hidden">
 
             <div className="flex justify-center gap-4 mb-12 mt-5 max-sm:gap-1">
                 {categories.map((category, key) => {
                     return(
-                        <button 
+                        <motion.button
+                        initial={{ opacity: 0, x: key > 2 ? 50 : key === 2 ? 0 : -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.1, ease: [0.5, 0.6, 0.8, 1] , delay: key % 2 * 0.2}}
+                        viewport={{ once: false, amount: 0.4 }}
                         className={`max-sm:text-xs z-30 px-5 py-2 max-sm:px-3 max-sm:py-1 rounded-full border-2 border-primary capitalize cursor-pointer card-hover hover:bg-primary transition-all duration-500 ease-in-out active:bg-[hsl(194,100%,40%)]
                                     ${activeCategory === category ? "bg-primary" : "backdrop-blur-lg shadow-2xl bg-primary/1"}`}
                         onClick={() => setActiveCategory(category)}
                         >
                             {category}
-                        </button>
+                        </motion.button>
                     )
                 })}
             </div>
@@ -52,7 +56,12 @@ export const SkillsCards = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredSkills.map((skill,key) => {
                     return (
-                        <div key={key} className="bg-primary/5 p-6 rounded-2xl z-30 backdrop-blur-lg shadow-2xl border-1 border-primary card-hover">
+                        <motion.div key={key} className="bg-primary/5 p-6 rounded-2xl z-30 backdrop-blur-lg shadow-2xl border-1 border-primary card-hover"
+                            initial={{ opacity: 0}}
+                            whileInView={{ opacity: 1}}
+                            transition={{ duration: 0.4, ease: [0.5, 0.6, 0.8, 1] , delay: key * 0.1}}
+                            viewport={{ once: false, amount: 0.4 }} 
+                        >
                             <div className="text-left mb-4">
                                 <h3 className="text-lg font-semibold text-glow">{skill.name}</h3>
                             </div>
@@ -62,7 +71,7 @@ export const SkillsCards = () => {
                             <div className="text-right mt-1">
                                 <span className="text-sm">{skill.level}%</span>
                             </div>
-                        </div>
+                        </motion.div>
                     )
                 })}
             </div>
