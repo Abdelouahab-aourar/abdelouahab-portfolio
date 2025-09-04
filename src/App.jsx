@@ -6,6 +6,7 @@ import { SkillsIcons } from "./pages/SkillsIcons"
 import { SkillsCards } from "./pages/SkillsCards"
 import { Projects } from "./pages/Projects"
 import { Contact } from "./pages/Contact"
+import { Footer } from "./components/Footer"
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
       <SkillsCards/>
       <Projects/>
       <Contact/>
+      <Footer/>
     </>
   )
 }
