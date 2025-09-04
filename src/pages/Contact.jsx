@@ -1,5 +1,5 @@
 import { Github, Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react"
-
+import Swal from 'sweetalert2'
 
 
 
@@ -23,7 +23,23 @@ export const Contact = () => {
         }).then((res) => res.json());
 
         if (res.success) {
-            console.log("Success", res);
+            Swal.fire({
+                title: "Success!",
+                text: "Message sent successfully!",
+                icon: "success",
+                theme: "dark",
+                confirmButtonText: 'Close',
+                confirmButtonColor: "#00C0F9"
+            });
+        }
+        else{
+            Swal.fire({
+                title: "Error!",
+                icon: "error",
+                theme: "dark",
+                confirmButtonText: 'Close',
+                confirmButtonColor: "#00C0F9"
+            });
         }
     };
 
