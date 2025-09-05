@@ -35,5 +35,21 @@ A modern, responsive personal portfolio built with **React** to showcase my proj
 4. **Start the server**
     npm run dev
 
+---
+
 ## 📸 Screenshots
 ![Screenshot of the hero section](./src/assets/HeroScreenshot.png)
+
+---
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to fork this repo and submit a pull request.
+
+---
+
+## 📫 Contact
+
+- **Portfolio:** [abdelouahab-portfolio.vercel.app/](https://abdelouahab-portfolio.vercel.app/)  
+- **LinkedIn:** [Aourar Abdelouahab](https://www.linkedin.com/in/aourar-abdelouahab/)  
+- **Email:** [abdelouahab.aourar@gmail.com](mailto:abdelouahab.aourar@gmail.com)
