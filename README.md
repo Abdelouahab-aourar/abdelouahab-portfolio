@@ -36,4 +36,4 @@ A modern, responsive personal portfolio built with **React** to showcase my proj
     npm run dev
 
 ## 📸 Screenshots
-![Screenshot of the hero section](/HeroScreenshot)
+![Screenshot of the hero section](./src/assets/HeroScreenshot.png)
