@@ -1,5 +1,6 @@
 import { Github, Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react"
 import Swal from 'sweetalert2'
+import { motion } from "motion/react";
 
 
 
@@ -45,12 +46,31 @@ export const Contact = () => {
 
     return(
         <section id="contact" className="px-20 max-md:px-4 overflow-hidden z-30 pb-20">
-            <h1 className="header"><span className="text-white">Get In </span>Touch</h1>
+            <motion.h1 className="header"
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{duration: 0.5}}
+                viewport={{ once: false, amount: 0.4 }}
+            ><span className="text-white">
+                Get In </span>Touch
+            </motion.h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div className="space-y-8">
-                    <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <motion.h3 className="text-2xl font-semibold mb-6"
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 0.5}}
+                        viewport={{ once: false, amount: 0.4 }}
+                        >
+                        Contact Information
+                    </motion.h3>
                     <div className="space-y-6 justify-center">
-                        <div className="flex items-start space-x-4">
+                        <motion.div className="flex items-start space-x-4"
+                            initial={{opacity: 0, x: -50}}
+                            whileInView={{opacity: 1, x: 0}}
+                            transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1]}}
+                            viewport={{ once: false, amount: 0.4 }}
+                        >
                             <div className="p-3 rounded-full bg-primary/10">
                                 <Mail className="h-6 w-6 text-primary"/>
                             </div>
@@ -60,9 +80,14 @@ export const Contact = () => {
                                     abdelouahab.aourar@gmail.com
                                 </a>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="flex items-start space-x-4">
+                        <motion.div className="flex items-start space-x-4"
+                            initial={{opacity: 0, x: -50}}
+                            whileInView={{opacity: 1, x: 0}}
+                            transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.4}}
+                            viewport={{ once: false, amount: 0.4 }}
+                        >
                             <div className="p-3 rounded-full bg-primary/10">
                                 <Phone className="h-6 w-6 text-primary"/>
                             </div>
@@ -72,9 +97,14 @@ export const Contact = () => {
                                     +213540201655
                                 </a>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="flex items-start space-x-4">
+                        <motion.div className="flex items-start space-x-4"
+                            initial={{opacity: 0, x: -50}}
+                            whileInView={{opacity: 1, x: 0}}
+                            transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.8}}
+                            viewport={{ once: false, amount: 0.4 }}
+                        >
                             <div className="p-3 rounded-full bg-primary/10">
                                 <MapPin className="h-6 w-6 text-primary"/>
                             </div>
@@ -84,9 +114,14 @@ export const Contact = () => {
                                     Batna, Algeria
                                 </a>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
-                    <div className="pt-8">
+                    <motion.div className="pt-8"
+                        initial={{opacity: 0, x: -50}}
+                        whileInView={{opacity: 1, x: 0}}
+                        transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 1.2}}
+                        viewport={{ once: false, amount: 0.4 }}
+                    >
                         <h4 className="font-medium mb-4 ">Connect With Me</h4>
                         <div className="flex justify-center space-x-4">
                             <a target="_blank" href="https://www.linkedin.com/in/aourar-abdelouahab/" className="hover:text-primary transition-colors duration-500 z-30">
@@ -102,13 +137,25 @@ export const Contact = () => {
                             </a>
 
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="bg-primary/5 p-8 rounded-2xl z-30 backdrop-blur-lg shadow-2xl border-1 border-primary card-hover">
-                    <h3 className="text-2xl font-semibold mb-6 ">Send a Message</h3>
+                    <motion.h3 className="text-2xl font-semibold mb-6 "
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 0.5}}
+                        viewport={{ once: false, amount: 0.4 }}
+                        >
+                        Send a Message
+                    </motion.h3>
 
                     <form action="" className="space-y-6" onSubmit={onSubmit}>
-                        <div>
+                        <motion.div
+                            initial={{opacity: 0, x: 50}}
+                            whileInView={{opacity: 1, x: 0}}
+                            transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1]}}
+                            viewport={{ once: false, amount: 0.4 }}
+                        >
                             <label htmlFor="name" className="block tex-sm font-medium mb-2">Your Name</label>
                             <input 
                             type="text" 
@@ -118,9 +165,14 @@ export const Contact = () => {
                             required 
                             className="w-full px-4 py-3 rounded-md border-2 border-primary bg-primary/10 focus:outline-hidden " 
                             />
-                        </div>
+                        </motion.div>
 
-                        <div>
+                        <motion.div 
+                            initial={{opacity: 0, x: 50}}
+                            whileInView={{opacity: 1, x: 0}}
+                            transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.4}}
+                            viewport={{ once: false, amount: 0.4 }}
+                        >
                             <label htmlFor="email" className="block tex-sm font-medium mb-2">Your Email</label>
                             <input 
                             type="email" 
@@ -130,9 +182,14 @@ export const Contact = () => {
                             required 
                             className="w-full px-4 py-3 rounded-md border-2 border-primary bg-primary/10 focus:outline-hidden " 
                             />
-                        </div>
+                        </motion.div>
 
-                        <div>
+                        <motion.div
+                            initial={{opacity: 0, x: 50}}
+                            whileInView={{opacity: 1, x: 0}}
+                            transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.8}}
+                            viewport={{ once: false, amount: 0.4 }}
+                        >
                             <label htmlFor="message" className="block tex-sm font-medium mb-2">Your Message</label>
                             <textarea 
                             id="message" 
@@ -141,12 +198,17 @@ export const Contact = () => {
                             required 
                             className="w-full px-4 py-3 rounded-md border-2 border-primary bg-primary/10 focus:outline-hidden resize-none" 
                             />
-                        </div>
+                        </motion.div>
 
-                        <button type="submit" className="inline-flex items-center gap-2 cursor-pointer border-2 border-primary p-2 rounded-lg bg-primary hover:bg-background transition-all card-hover duration-500 ease-in-out active:bg-primary/10" >
+                        <motion.button 
+                            initial={{opacity: 0, x: 50}}
+                            whileInView={{opacity: 1, x: 0}}
+                            transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay:1.2}}
+                            viewport={{ once: false, amount: 0.4 }}
+                            type="submit" className="inline-flex items-center gap-2 cursor-pointer border-2 border-primary p-2 rounded-lg bg-primary hover:bg-background transition-all card-hover duration-500 ease-in-out active:bg-primary/10" >
                             <p>Send Message</p>
                             <Send size={14}/>
-                        </button>
+                        </motion.button>
                     </form>
                 </div>
 
