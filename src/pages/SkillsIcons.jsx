@@ -61,7 +61,7 @@ export const SkillsIcons = () => {
                         {row.map((skill, colIndex) => (
                             <motion.div
                                 key={colIndex}
-                                className="flex flex-col items-center transition-all duration-500 hover:scale-[1.2]"
+                                className="flex flex-col items-center transition-all duration-500 hover:scale-[1.15]"
                                 variants={{
                                     hidden: { opacity: 0 },
                                     visible: { opacity: 1 },

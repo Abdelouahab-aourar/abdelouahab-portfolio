@@ -30,7 +30,7 @@ export const Home = () => {
                 </div>
                 <h3 className='text-xl text-glow max-[1100px]:text-lg'>Web Developer | Graphic Designer | AI Enthusiast</h3>
                 <a href="/MyCV.pdf" target='_blank' download="AourarAbdelouahab.pdf" rel="noopener noreferrer">
-                    <button className='max-[1100px]:text-lg text-xl border-2 border-primary p-4  max-md:p-3 rounded-2xl font-bold backdrop-blur-md shadows-sm hover:bg-primary transition-all card-hover duration-500 ease-in-out cursor-pointer active:bg-[hsl(194,100%,40%)]'>
+                    <button className='max-[1100px]:text-lg text-xl border-2 border-primary p-4  max-md:p-3 rounded-2xl font-bold backdrop-blur-md hover:bg-primary transition-all card-hover duration-500 ease-in-out cursor-pointer active:bg-[hsl(194,100%,40%)]'>
                         Download My CV
                     </button>
                 </a>

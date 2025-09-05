@@ -45,6 +45,10 @@
     @apply transition-all duration-500 hover:scale-[1.05];
 }
 
+@utility card-shadow {
+    @apply transition-all duration-500 hover:shadow-[0_0_30px] shadow-primary;
+}
+
 @utility star {
     @apply absolute rounded-full bg-primary;
     box-shadow: 0 0 10px 2px hsl(194, 100%, 60%);

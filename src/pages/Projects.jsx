@@ -56,7 +56,7 @@ export const Projects = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-15 my-20 max-md:px-10 max-sm:px-2">
                 {projects.map((project, key) => {
                     return(
-                        <motion.div key={key} className="rounded-xl card-hover bg-primary/5 z-30 backdrop-blur-lg shadow-2xl overflow-hidden relative"
+                        <motion.div key={key} className="card-shadow rounded-xl card-hover bg-primary/5 z-30 backdrop-blur-lg overflow-hidden relative"
                             initial={{ opacity: 0}}
                             whileInView={{ opacity: 1}}
                             transition={{ duration: 0.3, ease: [0.5, 0.6, 0.8, 1] , delay: key * 0.5}}

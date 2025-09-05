@@ -12,7 +12,7 @@ export const About = () => {
                 viewport={{ once: false, amount: 0.4 }}
             ><span className="text-white">About</span> Me
             </motion.h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center p-10 border-4 border-primary rounded-2xl bg-primary/2 backdrop-blur-sm shadow-2xl max-md:p-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center p-10 border-4 border-primary rounded-2xl bg-primary/2 backdrop-blur-sm max-md:p-4">
                 <motion.div className="flex items-center gap-4 flex-col"
                     initial={{opacity: 0, x: -50}}
                     whileInView={{opacity: 1, x: 0}}
@@ -41,7 +41,7 @@ export const About = () => {
                 </motion.div>
                 <div className="grid grid-cols-1 gap-8">
 
-                    <motion.div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover"
+                    <motion.div className="card-shadow border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg gap-2 card-hover"
                         initial={{opacity: 0, x: 50}}
                         whileInView={{opacity: 1, x: 0}}
                         transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1]}}
@@ -58,7 +58,7 @@ export const About = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover" 
+                    <motion.div className="card-shadow border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg gap-2 card-hover" 
                         initial={{opacity: 0, x: 50}}
                         whileInView={{opacity: 1, x: 0}}
                         transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.4}}
@@ -75,7 +75,7 @@ export const About = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div className="border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg shadow-2xl gap-2 card-hover" 
+                    <motion.div className="card-shadow border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg gap-2 card-hover" 
                         initial={{opacity: 0, x: 50}}
                         whileInView={{opacity: 1, x: 0}}
                         transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.8}}

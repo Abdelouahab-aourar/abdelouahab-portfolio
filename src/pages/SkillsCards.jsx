@@ -44,7 +44,7 @@ export const SkillsCards = () => {
                         transition={{ duration: 0.1, ease: [0.5, 0.6, 0.8, 1] , delay: key % 2 * 0.2}}
                         viewport={{ once: false, amount: 0.4 }}
                         className={`max-sm:text-xs z-30 px-5 py-2 max-sm:px-3 max-sm:py-1 rounded-full border-2 border-primary capitalize cursor-pointer card-hover hover:bg-primary transition-all duration-500 ease-in-out active:bg-[hsl(194,100%,40%)]
-                                    ${activeCategory === category ? "bg-primary" : "backdrop-blur-lg shadow-2xl bg-primary/1"}`}
+                                    ${activeCategory === category ? "bg-primary" : "backdrop-blur-lg bg-primary/1"}`}
                         onClick={() => setActiveCategory(category)}
                         >
                             {category}
@@ -56,7 +56,7 @@ export const SkillsCards = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredSkills.map((skill,key) => {
                     return (
-                        <motion.div key={key} className="bg-primary/5 p-6 rounded-2xl z-30 backdrop-blur-lg shadow-2xl border-1 border-primary card-hover"
+                        <motion.div key={key} className="bg-primary/5 p-6 rounded-2xl z-30 backdrop-blur-lg border-1 border-primary card-hover card-shadow"
                             initial={{ opacity: 0}}
                             whileInView={{ opacity: 1}}
                             transition={{ duration: 0.3, ease: [0.5, 0.6, 0.8, 1] , delay: key * 0.05}}
