@@ -65,3 +65,21 @@
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(194, 100%, 85%);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(194, 100%, 40%);
+}
