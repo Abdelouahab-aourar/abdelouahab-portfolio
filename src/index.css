@@ -18,7 +18,7 @@
   }
 @layer base {
     :root {
-        --background: 240 100% 10%;
+        --background: 240 100% 8%;
         --primary: 194 100% 60%;
     }
 
