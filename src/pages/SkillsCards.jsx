@@ -39,6 +39,7 @@ export const SkillsCards = () => {
                 {categories.map((category, key) => {
                     return(
                         <motion.button
+                        key={key}
                         initial={{ opacity: 0, x: key > 2 ? 20 : key === 2 ? 0 : -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.1, ease: [0.5, 0.6, 0.8, 1] , delay: key % 2 * 0.2}}

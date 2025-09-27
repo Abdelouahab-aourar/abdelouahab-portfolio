@@ -18,7 +18,7 @@
   }
 @layer base {
     :root {
-        --background: 211 100% 10%;
+        --background: 240 100% 10%;
         --primary: 194 100% 60%;
     }
 
@@ -76,7 +76,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary));
+  background: hsl(194, 100%, 50%);
   border-radius: 8px;
 }
 
