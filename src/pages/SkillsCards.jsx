@@ -12,6 +12,8 @@ export const SkillsCards = () => {
     ],
 
     backend: [
+      { name: "C++", level: "80" },
+      { name: "Rust", level: "65" },
       { name: "Node.js", level: "70" },
       { name: "Express", level: "70" },
       { name: "MySQL", level: "80" },

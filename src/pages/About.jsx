@@ -61,7 +61,7 @@ export const About = () => {
                     <motion.div className="card-shadow border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg gap-2 card-hover" 
                         initial={{opacity: 0, x: 50}}
                         whileInView={{opacity: 1, x: 0}}
-                        transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.4}}
+                        transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.3}}
                         viewport={{ once: false, amount: 0.4 }}
                     >
                         <div className="flex items-center gap-2">
@@ -78,7 +78,7 @@ export const About = () => {
                     <motion.div className="card-shadow border-1 border-primary flex items-start flex-col p-5 bg-primary/5 rounded-2xl backdrop-blur-lg gap-2 card-hover" 
                         initial={{opacity: 0, x: 50}}
                         whileInView={{opacity: 1, x: 0}}
-                        transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.8}}
+                        transition={{duration: 0.5, ease: [0.5, 0.6, 0.8, 1], delay: 0.5}}
                         viewport={{ once: false, amount: 0.4 }}
                     >
                         <div className="flex items-center gap-2">
