@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 export const SkillsIcons = () => {
     const MySkills = [
         {name: "C++", src: "/Cpp.png"},
+        {name: "Rust", src: "/Rust.png"},      
+        {name: "Tauri", src: "/Tauri.png"},      
         {name: "HTML5", src: "/Html.png"},
         {name: "CSS3", src: "/Css.png"},
         {name: "JavaScript", src: "/Js.png"},
@@ -24,12 +26,11 @@ export const SkillsIcons = () => {
 
         {name: "Illustrator", src: "/Illustrator.png"},
         {name: "Photoshop", src: "/Photoshop.png"},
-
         {name: "Figma", src: "/Figma.png"},
     ]
 
 
-    const layout = [6, 5, 4, 3]
+    const layout = [7, 6, 4, 3]
 
     let index = 0;
 
